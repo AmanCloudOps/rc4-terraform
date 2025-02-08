@@ -28,9 +28,9 @@ cd terraform-project
 ### **2️⃣ Create Terraform Configuration Files**
 Inside the project directory, create the following essential files:
 
-- `provider.tf`: Specifies the AWS provider configuration
-- `ec2.tf`: Defines the EC2 instance configurations
-- `variables.tf`: Stores variable definitions for the project
+- `terraform.tf`: Specifies the AWS provider configuration
+- `main.tf`: Defines the EC2 instance configurations
+- `variable.tf`: Stores variable definitions for the project
 - `output.tf`: Specifies the output values, such as instance IPs
 
 ### **3️⃣ Initialize Terraform**
@@ -51,6 +51,7 @@ Apply the Terraform configuration to create the infrastructure:
 terraform apply
 ```
 When prompted, confirm by entering `yes`.
+<img width="1680" alt="apply" src="https://github.com/user-attachments/assets/f8de2d8b-ffd2-4106-a808-fce25f4d2896" />
 
 ---
 
@@ -60,6 +61,8 @@ To completely remove the infrastructure and free up resources, run:
 ```bash
 terraform destroy
 ```
+<img width="1680" alt="destroy" src="https://github.com/user-attachments/assets/2f38574d-6988-4efa-88e2-a48152aa3c98" />
+
 ⚠️ **Warning:** This command will permanently delete all resources created by Terraform.
 
 ---
